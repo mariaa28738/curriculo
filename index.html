@@ -5,15 +5,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url("https://i.pinimg.com/originals/75/1d/64/751d648f80bae282b393cac8ec340e29.gif");
-            background-size: cover;
-            background-position: center;
+            background-image: url("https://i.pinimg.com/originals/f5/f2/74/f5f27448c036af645c27467c789ad759.gif");
+            background-repeat: no-repeat; /* Prevents repeating the image */
+            background-size: cover; /* Ensures the image covers the whole background */
+            background-position: center; /* Centers the background image */
             margin: 0;
             padding: 0;
         }
 
         #header {
-            background-color: rgb(93, 99, 100);
+            background-color: rgb(1, 24, 68);
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -24,19 +25,34 @@
             height: 2in;
             border-radius: 0;
             display: block;
-            margin: 0 auto 20px auto; /* Espaço de uma linha abaixo da imagem */
+            margin: 20px auto; /* Espaço de uma linha acima e abaixo da imagem */
             object-fit: cover;
         }
 
         #main-content {
             padding: 10px;
-            background-color /* Adicione transparência ao conteúdo */
+            background-color: rgba(1, 23, 32, 0.6); /* Adicione transparência ao conteúdo */
             max-width: 600px; /* Defina uma largura máxima para o conteúdo */
             margin: 0 auto; /* Centralize o conteúdo */
             border-radius: 10px; /* Adicione cantos arredondados ao conteúdo */
+            min-height: 100vh; /* Garante que o conteúdo tenha no mínimo a altura da janela de visualização */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centralize verticalmente o conteúdo */
+            align-items: center; /* Centralize horizontalmente o conteúdo */
         }
-         h2 {
+
+        h2 {
             color: #fff; /* Define a cor dos elementos <h2> como branco */
+        }
+
+        p {
+            color: #fff; /* Define a cor dos elementos <p> como branco */
+        }
+
+        .content-section {
+            text-align: center;
+            width: 100%;
         }
     </style>
 </head>
@@ -46,22 +62,24 @@
     </div>
     <div id="main-content">
         <img id="profile-image" src="https://pbs.twimg.com/media/GOB8uI6W4AAGtGG?format=jpg&name=small" alt="Foto de Perfil">
-        <div></div>
-        <h2>Dados Pessoais:</h2>
-        <p>Nome: Maria Fernanda Delfino</p>
-        <p>E-mail: maria.delfio@aluno.fmpsc.edu.br</p>
-        <p>Telefone: 48 999518937</p>
-
-        <h2>Experiência Profissional:</h2>
-        <p>nenhuma</p>
-        <p>nada</p>
-        <p>absolutamente nada mesmo</p>
-
-        <h2>Formação Acadêmica:</h2>
-        <p>Curso: ADS - Análise e Desenvolvimento de sistemas</p>
-        <p>Instituição: Fuldade Municipal De Palhoça</p>
-        <p>Ano de Conclusão: 2026</p>
+        <div class="content-section">
+            <h2>Dados Pessoais:</h2>
+            <p>Nome: Maria Fernanda Delfino</p>
+            <p>E-mail: maria.delfio@aluno.fmpsc.edu.br</p>
+            <p>Telefone: 48 999518937</p>
+        </div>
+        <div class="content-section">
+            <h2>Experiência Profissional:</h2>
+            <p>nenhuma</p>
+            <p>nada</p>
+            <p>absolutamente nada mesmo</p>
+        </div>
+        <div class="content-section">
+            <h2>Formação Acadêmica:</h2>
+            <p>Curso: ADS - Análise e Desenvolvimento de sistemas</p>
+            <p>Instituição: Fuldade Municipal De Palhoça</p>
+            <p>Ano de Conclusão: 2026</p>
+        </div>
     </div>
 </body>
 </html>
-
